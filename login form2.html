@@ -1,0 +1,199 @@
+<html>
+<head>
+	<title>login form</title>
+<style>
+	body{
+		margin: 60px 0 0 500px;
+		font-size: px; 
+		}
+	h6{
+		color: gray;
+	}
+	.submit{
+		font-size: 20px;
+		color: black;
+		background-color: skyblue;
+		border: solid black 1px;
+		margin: 8px 0 8px 0;
+		padding: 6px 40px 6px 40px;
+	}
+	img{
+		border: solid gray 0.50px;
+		margin: 8px 0 8px 0;
+	}
+	.box{
+		font-size: 12px;		
+		}
+
+	.country{
+	
+		margin: 0 0 0 70px;
+	}
+	.F10{
+		margin-top: 5px;
+	}
+	.cra{
+			font-size: 25px;
+			font-family: Arial;
+	}
+	
+
+</style>
+</head>
+<body>
+	
+	<table>
+		<form>
+			<tr>
+				<td colspan="4" class="cra">Create a Rediffmail account</td>
+			</tr>
+			<tr>
+				<td>Full name:</td>
+				<td><input type="text" name="name"></td>
+				<td><h6>Enter your first name & last name<br> 
+  					Eg. Sameer Bhagwat</h6>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">Choose a Rediffmail ID:</td>
+				<td><input type="text" name="name">
+				<br>
+					<div class="F10">
+					<input type="button" value="Check availability">
+				</td>
+				<td><h6>@rediffmail.com</h6>
+
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" id="Password" name="Password"></td>
+				<td rowspan="5"><h6>New Password
+					<br>•must contain 8-100 characters
+                                       	<br>• must contain both upper and lower case characters
+					<br>• must contain numeric characters
+					<br>• must contain special characters
+					<br>• must be different from last 3 passwords used
+					<br>• must not contain your username or firstname or lastname</h6>
+				</td>
+			</tr>
+			<tr>
+				<td>Retype Password:</td>
+				<td><input type="text" id="Retype Password" name="Retype Password"></td>
+			</tr>
+			<tr>
+				<td valign="top">Alternate Email Address:</td>
+				<td><input type="text" id="Email Address" name="email Address">
+				<br><input type="checkbox" value="male" name="name">
+					<span class="box"> Click if you don't have an alternate Id</span>
+                                    			
+			</td>
+			</tr>
+			<tr>
+				<td>Mobile No:</td>
+				<td><select name="+91">
+					<option value="1">+91</option>
+					<option value="1">+1</option>
+					<option value="1">+44</option>
+					<option value="1">+93</option>
+					<option value="1">+61</option>
+					<input type="text" id="mobile no" name="mobile no">
+				</td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><select name="day">
+					<option >day</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				    </select>
+				    <select name="month">
+					<option>month</option>
+					<option value="1">january</option>
+					<option value="2">February</option>
+					<option value="3">march</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				    </select>
+				    <select name="year">
+					<option>year</option>
+					<option value="1">2001</option>
+					<option value="2">2002</option>
+					<option value="3">2003</option>
+					<option value="4">2004</option>
+					<option value="5">2005</option>
+					<option value="6">2006</option>
+					<option value="7">2007</option>
+					<option value="8">2008</option>
+					<option value="9">2009</option>
+					<option value="10">2010</option>
+					<option value="11>2011</option>
+					<option value="12">2012</option>
+					<option value="13">2013</option>
+					<option value="14">2014</option>
+					<option value="15">2015</option>
+					<option value="16">2016</option>
+					<option value="17">2017</option>
+					<option value="18">2018</option>
+					<option value="19">2019</option>
+					<option value="20">2020</option>
+				   </select>
+				</td>
+			</tr>
+			<tr>
+				<td class="mf">Gender:</td>
+				<td><input type="radio" value="male" name="name">male
+				     <input type="radio" value="female" name="name">female
+				</td>
+			</tr>
+			<tr>
+				<td>I live In <span class="country">country:</span></td>
+				<td>
+					<select name="country">
+					<option>india</option>
+					<option value="1">Nepal</option>
+					<option value="2">Bhutan</option>
+					<option value="3">Bangladesh</option>
+					<option value="4">France</option>
+					<option value="5">Egypt</option>
+					<option value="6">Germany</option>
+					<option value="7">Japan</option>
+					<option value="8">Austrilia</option>
+					<option value="9">iran</option>
+					<option value="10">Iraq</option>
+				</td>				
+			</tr>
+			<tr>
+				<td colsapn="1"></td>
+				<td colsapn="2"><img src="capcha.png"></td>
+			</tr>
+			<tr>
+				<td>Enter the text shown above:</td>
+				<td><input type="text" name="Enter the text shown above"</td>
+			</tr>
+			<tr>
+				<td colspan="1"></td>
+				<td colspan="2"><input type="submit" value="Create my account>>" class="submit"> 
+				
+			</tr>
+			<tr>
+				<td colspan="4"><h6>By clicking on 'Create my account' above, you confirm that you        							accept the terms and conditions & privacy policy</h6></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html
